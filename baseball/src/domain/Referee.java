@@ -11,7 +11,7 @@ public class Referee {
         Judgment judgment = new Judgment();
         int count = judgment.correctCount(computer, player);
         int strike = 0;
-        for (int i = 0; i < computer.size(); i++) {
+        for (int i = 0; i < player.size(); i++) {
             if (judgment.hasPlace(computer, i, player.get(i))) {
                 strike++;
             }

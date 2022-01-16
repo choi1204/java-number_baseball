@@ -18,6 +18,10 @@ public class Referee {
         }
         int ball = count - strike;
 
+        if (count == 0 ) {
+            return "낫씽";
+       }
+
         return ball + " 볼 " + strike + " 스트라이크";
     }
 }

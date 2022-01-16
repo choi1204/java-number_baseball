@@ -9,9 +9,11 @@ public class NumberGenerator {
 
     public List<Integer> createRandomNumbers() {
         List<Integer> numbers = new ArrayList<>();
-        for (int i = 0; i < 3; i++) {
+        while (numbers.size() < 3) {
             int number = new Random().nextInt(8) + 1;
-            numbers.add(number);
+            if(!numbers.contains(number)) {
+                numbers.add(number);
+            }
         }
         return numbers;
     }

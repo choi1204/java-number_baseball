@@ -12,8 +12,11 @@ public class Game {
 //        System.out.println("computer = " + computer);
 
         Judgment judgment = new Judgment();
-        int count = judgment.correctCount(Arrays.asList(1, 2, 3), Arrays.asList(1, 2, 3));
-        System.out.println(count);
+//        int count = judgment.correctCount(Arrays.asList(1, 2, 3), Arrays.asList(1, 2, 3));
+//        System.out.println(count);
+
+        boolean place = judgment.hasPlace(Arrays.asList(7, 8, 9), 1, 7);
+        System.out.println(place);
     }
 
 }
